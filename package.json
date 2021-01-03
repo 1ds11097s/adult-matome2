@@ -1,0 +1,23 @@
+{
+  "name": "adult-matome",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.7",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/sitemap": "^2.2.1",
+    "contentful": "^7.14.2",
+    "core-js": "2.6.11",
+    "nuxt": "^2.14.12",
+    "v-video-embed": "^1.0.8"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.2"
+  }
+}
