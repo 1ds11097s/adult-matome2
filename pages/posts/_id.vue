@@ -1,37 +1,22 @@
 <template>
   <v-row align="center" class="flex-column">
-    <video id="player" width="90%" playsinline onclick="this.play();"  controls preload="none" :poster="`https://image.mgstage.com/images${item[0].fields.thumbnailUrl}`">
-      <source src="https://sample.mgstage.com/sample/shirouto/siro/4381/siro-4381_20201218T161301.mp4">
+    <video id="player" width="90%" class="mt-4" playsinline onclick="this.play();"  controls preload="none" :poster="`${item[0].fields.thumbnailUrl}`">
+      <source :src="`${item[0].fields.sampleMovieUrl}`">
     </video>
-    <v-btn large width="90%" href="https://www.mgstage.com/product/product_detail/SIRO-4384/" ripple>MGS動画で見る</v-btn>
-    <v-card class="mt-4" width="90%">
-        <v-card class="mt-2" width="95%">
-        <v-card-title class="headline">
-            まあ良い方？
-        </v-card-title>
-        <v-card-subtitle>
-            顔スタイル悪くないし、気取らない感じの喋り方とかウブめなリアクションとかの素人っぽさもあって良し。顔がアップになるとたまにブツブツが見えたりお尻の黒ずみがちょっと気になったけどそれも素人っぽいと思えば許せなくもない……？
-        </v-card-subtitle>
-        </v-card>
-        <v-card class="mt-2" width="95%">
-        <v-card-title class="headline">
-            ちっぱい美少女
-        </v-card-title>
-        <v-card-subtitle>
-            仕草も可愛い素人ちゃんですね笑
-こんな子がAVデビューしちゃうのかぁ！と思いながらついみとれちゃいます！
-ちっぱいがありな人なら絶対ハマる！！！
-        </v-card-subtitle>
-        </v-card>
-        <v-card class="mt-2" width="95%">
-        <v-card-title class="headline">
-            可愛い
-        </v-card-title>
-        <v-card-subtitle>
-            可愛い！あどけない顔でち○ぽ美味しそうに咥えてる姿がエロい。
-バックの時に見えるお尻の日焼け後も良い。
-        </v-card-subtitle>
-        </v-card>
+    <v-btn large class="headline font-weight-bold" color="#6666FF" height="70px" width="90%" :href="`${item[0].fields.productUrl}`" ripple target="_blank">MGS動画で見る</v-btn>
+    <v-card class="mt-4" width="90%" color="#FF99CC">
+      <v-card v-if="item[0].fields.reviewTitle1" class="ma-auto my-2" width="95%">
+        <v-card-title class="title">{{item[0].fields.reviewTitle1}}</v-card-title>
+        <v-card-text>{{item[0].fields.reviewContent1}}</v-card-text>
+      </v-card>
+      <v-card v-if="item[0].fields.reviewTitle2" class="ma-auto mb-2" width="95%">
+        <v-card-title class="title">{{item[0].fields.reviewTitle2}}</v-card-title>
+        <v-card-subtitle>{{item[0].fields.reviewContent2}}</v-card-subtitle>
+      </v-card>
+      <v-card v-if="item[0].fields.reviewTitle3" class="ma-auto mb-2" width="95%">
+        <v-card-title class="title">{{item[0].fields.reviewTitle3}}</v-card-title>
+        <v-card-subtitle>{{item[0].fields.reviewContent3}}</v-card-subtitle>
+      </v-card>
     </v-card>
   </v-row>
 </template>
