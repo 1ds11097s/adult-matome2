@@ -48,11 +48,9 @@ export default {
     }
   },
   async asyncData({ params , env }) {
-      console.log("ssss",params.id )
     return client
       .getEntries({content_type:env.CTF_BLOG_POST_TYPE_ID})
       .then(entries => {
-          console.log("re",entries.items[0].fields.id)
         return {
           item: entries.items.filter(item => item.fields.id == params.id)
         }

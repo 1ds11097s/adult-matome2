@@ -1,5 +1,6 @@
 <template>
-  <v-row justify="center">
+  <div v-if="displayLists.length == 0"><v-skeleton-loader type="table-row-divider@6" /></div>
+  <v-row v-else justify="center">
     <v-col :xs="12" :sm="12" :md="3" :lg="3" v-for="(item, i) in displayLists" :key="i">
       <v-card hover ripple max-width="400px" :to="{ path: `/posts/${item.fields.id}`}">
         <v-img max-width="400px" max-height="200px" :src="`${item.fields.thumbnailUrl}`"></v-img>
@@ -41,6 +42,7 @@ export default {
   methods: {
     getChangeData(pageNumber) {
       this.displayLists = this.items.slice(this.pageSize*(pageNumber -1), this.pageSize*(pageNumber));
+      this.$router.push(`?page=${pageNumber}`);
     }
   },
   async asyncData({ env }) {

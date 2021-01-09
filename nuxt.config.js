@@ -9,17 +9,24 @@ export default {
           content_type: process.env.CTF_BLOG_POST_TYPE_ID
         })
       ]).then(([ posts ]) => {
-        return [
+        let postsInfo = [
           ...posts.items.map(post => {
             return { route: `posts/${post.fields.id}`, payload: post }
           })
-        ]
+        ];
+        let pageLength = Math.ceil(posts.items.length/16);
+        let pageInfo = [];
+        // for (let i = 1; i <= pageLength; i++) {
+        //   pageInfo.push({ query: { page: i }, payload: posts });
+        // }
+        let array = [...postsInfo, ...pageInfo];
+        return array;
       })
     }
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: '最強の痙攣絶頂動画をひたすら紹介！',
+    title: '痙攣神',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -27,7 +34,7 @@ export default {
       { 
         hid: 'description', 
       　name: 'description', 
-        content: '女性が本能のままにイキまくる痙攣絶頂動画をひたすら紹介しているサイトです。ポルチオ、痙攣、オーガズム、脳イキ、中イキ、Gスポット、クリトリスなど様々なパターンによる快楽でイキまくります。世の中にある痙攣絶頂動画はすべてこのサイトで網羅されています。' }
+        content: '最強の痙攣絶頂動画をひたすら紹介！女性が本能のままにイキまくる痙攣絶頂動画をひたすら紹介しているサイトです。ポルチオ、痙攣、オーガズム、脳イキ、中イキ、Gスポット、クリトリスなど様々なパターンによる快楽でイキまくります。世の中にある痙攣絶頂動画はすべてこのサイトで網羅されています。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -57,7 +64,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/sitemap'
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
@@ -70,4 +78,29 @@ export default {
     CTF_BLOG_POST_TYPE_ID: process.env.CTF_BLOG_POST_TYPE_ID,
     CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN
   },
+
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://keirenavmatome.xyz',
+    routes() {
+      return Promise.all([
+        client.getEntries({
+          content_type: process.env.CTF_BLOG_POST_TYPE_ID
+        })
+      ]).then(([ posts ]) => {
+        let postsInfo = [
+          ...posts.items.map(post => {
+            return { route: `posts/${post.fields.id}`, payload: post }
+          })
+        ];
+        let pageLength = Math.ceil(posts.items.length/16);
+        let pageInfo = [];
+        // for (let i = 1; i <= pageLength; i++) {
+        //   pageInfo.push({ query: { page: i }, payload: posts });
+        // }
+        let array = [...postsInfo, ...pageInfo];
+        return array;
+      })
+    }
+  }
 }
