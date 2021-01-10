@@ -1,14 +1,14 @@
 <template>
   <v-app>
     <Header />
-    <v-row>
+    <v-row class="mt-2 pb-4 px-6">
       <v-col cols="2">
         <LeftContent />
       </v-col>
       <v-col cols="8">
         <Nuxt />
       </v-col>
-      <v-col cols="2">
+      <v-col cols="2" class="ma-0">
         <RightContent />
       </v-col>
     </v-row>
