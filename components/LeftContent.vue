@@ -9,7 +9,7 @@
     </v-chip>  
     <v-col cols="12" v-for="(item, i) in recommendData" :key="i" class="pb-0">
       <v-card tile flat hover ripple :href="`${item.productUrl}`" target="_blank">
-        <v-img  :src="`${item.thumbnailUrl}`"></v-img>
+        <v-img :src="`${item.thumbnailUrl}`"></v-img>
         <p class="left-title-font white">
           <span class="title-font-hidden">{{item.title}}</span>
         </p>

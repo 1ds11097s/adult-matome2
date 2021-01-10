@@ -2,7 +2,7 @@
   <div v-if="displayLists.length == 0"><v-skeleton-loader type="table-row-divider@6" /></div>
   <v-row v-else justify="center" no-gutters>
     <v-col :xs="12" :sm="12" :md="3" :lg="3" v-for="(item, i) in displayLists" :key="i">
-      <v-card hover ripple max-width="400px" :to="{ path: `/posts/${item.fields.id}`}">
+      <v-card hover ripple max-width="400px" class="ma-auto" :to="{ path: `/posts/${item.fields.id}`}">
         <v-img max-width="400px" max-height="200px" :src="`${item.fields.thumbnailUrl}`"></v-img>
         <p class="title-font">
           <span class="title-font-hidden">{{item.fields.title}}</span>
@@ -36,7 +36,7 @@ export default {
   created: function(){
     if(!this.displayLists.length) {
       this.displayLists = this.items.slice(0, this.pageSize);
-    } 
+    }
   },
   mounted: function(){
     this.length = Math.ceil(this.items.length/this.pageSize);
