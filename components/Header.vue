@@ -1,10 +1,9 @@
 <template>
-<div>
-  <v-row justify="center">
-    <v-col cols="3"></v-col>
-    <v-col cols="6" class="text-center">最強の痙攣絶頂動画をひたすら紹介！</v-col>
-    <v-col cols="3"></v-col>  
-  </v-row>
-  <hr />
+  <div class="text-center">
+    <h1>痙攣神</h1>  
+    <span>最強の痙攣絶頂動画をひたすら紹介！</span>
+    <br />
+    <span>痙攣絶頂、ポルチオ開発、Gスポット刺激などでビクンビクンイキまくる動画を厳選しています、あなたの探していた動画が必ず見つかります！</span>
+    <hr />
   </div>
 </template>

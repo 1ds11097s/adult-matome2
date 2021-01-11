@@ -12,6 +12,7 @@
         <RightContent />
       </v-col>
     </v-row>
+    <Footer />
   </v-app>
 </template>
 
@@ -19,12 +20,14 @@
 import LeftContent from '~/components/LeftContent.vue'
 import RightContent from '~/components/RightContent.vue'
 import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
     LeftContent,
     RightContent,
-    Header
+    Header,
+    Footer
   }
 }
 </script>
