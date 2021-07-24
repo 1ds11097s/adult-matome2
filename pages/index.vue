@@ -7,9 +7,8 @@
         <p class="title-font">
           <span class="title-font-hidden">{{item.fields.title}}</span>
         </p>
-        <p class="update-date">更新日：{{$moment(item.sys.createdAt).format('YYYY年MM月DD日')}}</p>
+        <p class="update-date">更新日：{{$moment(item.sys.updatedAt).format('YYYY年MM月DD日')}}</p>
       </v-card>
-      
     </v-col>
     <v-col cols="12">
       <div class="text-center">
@@ -27,8 +26,14 @@
 import client from '~/plugins/contentful'
 
 export default {
+  head() {
+    return {
+      title: (this.page == 1) ? this.title + '- Top' : this.title + '- ' + this.page + 'ページ目'
+    }
+  },
   data () {
     return {
+      title: 'ガチ痙攣イキする動画だけを集めてみました。',
       page: 1,
       pageSize:16,
       displayLists:[],
