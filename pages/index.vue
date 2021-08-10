@@ -33,7 +33,7 @@ export default {
   },
   data () {
     return {
-      title: 'ガチ痙攣イキする動画だけを集めてみました。',
+      title: 'ガチ痙攣イキする動画だけを集めてAVレビュー',
       page: 1,
       pageSize:16,
       displayLists:[],
