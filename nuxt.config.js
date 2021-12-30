@@ -26,7 +26,7 @@ export default {
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'ガチ痙攣イキする動画だけを集めてAVレビュー',
+    title: '中イキ痙攣するAVだけを厳選しました',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -49,10 +49,10 @@ export default {
   plugins: [
     { src: '~plugins/ga.js', mode: 'client' },
     'plugins/contentful',
-    {
-      src: 'plugins/video',
-      mode: 'client'
-    }
+    // {
+    //   src: 'plugins/video',
+    //   mode: 'client'
+    // }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

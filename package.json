@@ -15,10 +15,9 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "contentful": "^7.14.2",
     "core-js": "2.6.11",
-    "nuxt": "^2.14.12",
-    "v-video-embed": "^1.0.8"
+    "nuxt": "^2.14.12"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.2"
+    "@nuxtjs/vuetify": "^1.12.3"
   }
 }
