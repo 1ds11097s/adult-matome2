@@ -3,11 +3,13 @@
   <v-row v-else justify="center" no-gutters>
     <v-col class="mb-1 pr-1" :xs="12" :sm="12" :md="3" :lg="3" v-for="(item, i) in displayLists" :key="i">
       <v-card hover ripple max-width="400px" class="ma-auto" :href="`${item.fields.productUrl}`" target="_blank">
-        <v-img max-width="400px" max-height="200px" :src="`${item.fields.thumbnailUrl}`"></v-img>
+        <v-img max-width="400px" height="150px" :src="`${item.fields.thumbnailUrl}`"></v-img>
         <p class="title-font">
-          <span class="title-font-hidden">{{item.fields.title}}</span>
+          <span class="title-font-hidden text-center mt-1">女優名 : {{item.fields.title}}</span>
         </p>
-        <p class="update-date">更新日：{{$moment(item.sys.updatedAt).format('YYYY年MM月DD日')}}</p>
+        <p class="title-font">
+          <span class="title-font-hidden text-center">{{item.fields.title2}}</span>
+        </p>
       </v-card>
     </v-col>
     <v-col cols="12">
@@ -33,7 +35,7 @@ export default {
   },
   data () {
     return {
-      title: 'ガチ痙攣イキする動画だけを集めてAVレビュー',
+      title: '中イキ痙攣するAV女優だけを厳選しました',
       page: 1,
       pageSize:16,
       displayLists:[],
@@ -46,6 +48,7 @@ export default {
     }
   },
   mounted: function(){
+    console.log(this.items)
     this.length = Math.ceil(this.items.length/this.pageSize);
   },
   methods: {
@@ -58,8 +61,9 @@ export default {
     return client
       .getEntries({content_type:env.CTF_BLOG_POST_TYPE_ID})
       .then(entries => {
+        console.log(entries.items)
         return {
-          items: entries.items
+          items: entries.items.sort(function(a, b) {return (a.fields.sortKey < b.fields.sortKey) ? -1 : 1;})
         }
       })
       .catch(console.error)
@@ -98,5 +102,8 @@ export default {
   font-weight: bold;
   font-size: 14px;
   margin-bottom:0!important;
+}
+.text-center {
+  text-align: center;
 }
 </style>

@@ -26,7 +26,7 @@ export default {
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: '中イキ痙攣するAVだけを厳選しました',
+    title: '中イキ痙攣するAV女優だけを厳選しました',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +34,7 @@ export default {
       { 
         hid: 'description', 
       　name: 'description', 
-        content: '最強の痙攣絶頂動画をひたすら紹介！女性が本能のままにイキまくる痙攣絶頂動画をひたすら紹介しているサイトです。ポルチオ、痙攣、オーガズム、脳イキ、中イキ、Gスポット、クリトリスなど様々なパターンによる快楽でイキまくります。世の中にある痙攣絶頂動画はすべてこのサイトで網羅されています。' }
+        content: '性感開発済みで中イキ痙攣絶頂できるAV女優を厳選して紹介！女性が本能のままにイキまくる痙攣絶頂動画をひたすら紹介しているサイトです。ポルチオ、痙攣、オーガズム、脳イキ、中イキ、Gスポット、クリトリスなど様々なパターンによる快楽でイキまくります。世の中にある痙攣絶頂動画はすべてこのサイトで網羅されています。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
