@@ -1,5 +1,5 @@
 <template>
   <div class="text-center">
-    <span>Copyright © 2022 中イキ痙攣絶頂するAV女優だけを厳選しました All Rights Reserved.</span>
+    <span>Copyright © 2022 NKP福岡 All Rights Reserved.</span>
   </div>
 </template>

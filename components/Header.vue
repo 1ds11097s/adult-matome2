@@ -1,9 +1,9 @@
 <template>
   <div class="text-center">
-    <h1><a href="https://keirenavmatome.xyz/" style="text-decoration:none;color:black">中イキ痙攣絶頂するAV女優だけを厳選しました</a></h1>  
-    <span>性感開発済みで中イキ痙攣絶頂できるAV女優を厳選して紹介！</span>
+    <h1><a href="https://keirenavmatome.xyz/" style="text-decoration:none;color:black">NKP福岡</a></h1>  
+    <span>今まで経験したことがない快感を味わいたい女性の性感を開発します</span>
     <br />
-    <span>痙攣絶頂、ポルチオ開発、Gスポット刺激などでビクンビクンイキまくるAV女優を厳選しています、痙攣イキ好きならおかずに困らないかつ探す手間が省けます</span>
+    <span>『イク』という経験をしたことがない、よく分からないけど経験してみたい、よく聞いたり動画で見たことがあるような痙攣しながら時には放心状態で涎を垂らしてしまうような快楽を味わいたい女性の性感を開発します</span>
     <hr />
   </div>
 </template>

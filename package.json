@@ -15,7 +15,10 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "contentful": "^7.14.2",
     "core-js": "2.6.11",
-    "nuxt": "^2.14.12"
+    "embed": "^0.0.1",
+    "nuxt": "^2.14.12",
+    "vue-tweet": "^2.0.2",
+    "vue-tweet-embed": "^2.4.0"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.3"

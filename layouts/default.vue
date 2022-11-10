@@ -5,11 +5,8 @@
       <v-col v-if="this.$vuetify.breakpoint.name=='lg'" :lg="2">
         <LeftContent />
       </v-col>
-      <v-col :xs="12" :lg="8">
+      <v-col :xs="12" :lg="10">
         <Nuxt />
-      </v-col>
-      <v-col v-if="this.$vuetify.breakpoint.name=='lg'" :lg="2" class="ma-0">
-        <RightContent />
       </v-col>
     </v-row>
     <Footer />
@@ -18,14 +15,12 @@
 
 <script>
 import LeftContent from '~/components/LeftContent.vue'
-import RightContent from '~/components/RightContent.vue'
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
     LeftContent,
-    RightContent,
     Header,
     Footer
   }

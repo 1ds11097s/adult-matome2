@@ -26,7 +26,7 @@ export default {
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: '中イキ痙攣するAV女優だけを厳選しました',
+    title: 'NKP福岡',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +34,7 @@ export default {
       { 
         hid: 'description', 
       　name: 'description', 
-        content: 'ポルチオ、痙攣、オーガズム、脳イキ、中イキ、Gスポット、七沢みあ、弥生みづき、紗倉まな、皆月ひかる、天使もえ、新井リマ、琴石ゆめる、楓ふうあ、つぼみ、桃乃木かな、相沢みなみ、有村のぞみ、橋本ありな、坂道みる、みひな、倉本すみれ、美島由紀' }
+        content: 'ポルチオ、痙攣、オーガズム、クリイキ、中イキ、ポルチオイキ、福岡、性感開発' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

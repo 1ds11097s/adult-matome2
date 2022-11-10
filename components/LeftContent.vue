@@ -5,15 +5,51 @@
       color="warning"
       label
     >
-      殿堂入り痙攣動画
+      おすすめのおもちゃ
     </v-chip>  
-    <v-col cols="12" v-for="(item, i) in recommendData" :key="i" class="pb-0">
-      <v-card tile flat hover ripple :href="`${item.productUrl}`" target="_blank">
-        <v-img :src="`${item.thumbnailUrl}`"></v-img>
-        <p class="left-title-font white">
-          <span class="title-font-hidden">{{item.title}}</span>
-        </p>
-      </v-card>
+    <v-col cols="12" class="pb-0">
+      <v-img
+        lazy-src="https://m.media-amazon.com/images/I/31SpmcHlYeL._AC_SL1000_.jpg"
+        max-width="200"
+        class="ma-auto"
+        src="https://m.media-amazon.com/images/I/31SpmcHlYeL._AC_SL1000_.jpg"
+      ></v-img>
+      <v-img
+        lazy-src="https://m.media-amazon.com/images/I/51Z0VANI6hL._AC_SX425_.jpg"
+        max-width="200"
+        class="ma-auto"
+        src="https://m.media-amazon.com/images/I/51Z0VANI6hL._AC_SX425_.jpg"
+      ></v-img>
+      <v-img
+        lazy-src="https://m.media-amazon.com/images/I/41hYcGFfEHS._AC_SY450_.jpg"
+        max-width="200"
+        class="ma-auto"
+        src="https://m.media-amazon.com/images/I/41hYcGFfEHS._AC_SY450_.jpg"
+      ></v-img>
+      <v-img
+        lazy-src="https://m.media-amazon.com/images/I/51Fbkcr1drS._AC_SX679_.jpg"
+        max-width="200"
+        class="ma-auto"
+        src="https://m.media-amazon.com/images/I/51Fbkcr1drS._AC_SX679_.jpg"
+      ></v-img>
+      <v-img
+        lazy-src="https://m.media-amazon.com/images/I/612I3tbOGxL._AC_UL320_.jpg"
+        max-width="200"
+        class="ma-auto"
+        src="https://m.media-amazon.com/images/I/612I3tbOGxL._AC_UL320_.jpg"
+      ></v-img>
+      <v-img
+        lazy-src="https://m.media-amazon.com/images/I/51ypvUeepXL._AC_UL320_.jpg"
+        max-width="200"
+        class="ma-auto"
+        src="https://m.media-amazon.com/images/I/51ypvUeepXL._AC_UL320_.jpg"
+      ></v-img>
+      <v-img
+        lazy-src="https://m.media-amazon.com/images/I/61laIyTY8JL._AC_UL320_.jpg"
+        max-width="200"
+        class="ma-auto"
+        src="https://m.media-amazon.com/images/I/61laIyTY8JL._AC_UL320_.jpg"
+      ></v-img>
     </v-col>
   </v-row>
 </template>
