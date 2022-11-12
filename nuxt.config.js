@@ -26,7 +26,7 @@ export default {
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'NKP福岡',
+    title: 'NKP福岡(北九州/小倉/筑豊/筑後/久留米/飯塚/筑紫野/宗像)',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +34,7 @@ export default {
       { 
         hid: 'description', 
       　name: 'description', 
-        content: 'ポルチオ、痙攣、オーガズム、クリイキ、中イキ、ポルチオイキ、福岡、性感開発' }
+        content: '北九州、小倉、筑豊、筑後、久留米、飯塚、筑紫野、宗像、ポルチオ、痙攣、オーガズム、クリイキ、中イキ、ポルチオイキ、福岡、性感開発' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
